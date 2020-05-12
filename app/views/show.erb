@@ -1,0 +1,14 @@
+<form action="/puppies/<%= @puppy.id %>" method="post">
+    <input type = "hidden" name = "_method" value = "patch"/>
+    <input type = "hidden" name = "_method" value = "delete"/>
+    <label for=name>Name of Puppy :</label>
+    <input type="text" name= "name" value = "<%= @puppy.name %>"/>
+    <label for=breed>Breed of Puppy :</label>
+    <input type="text" name="breed" value = "<%= @puppy.breed %>"/><br><br>
+    <input type = "submit" value = "Edit"/>
+    <input type = "submit" value = "Done"/>
+    <input type = "submit" value = "Delete"/>
+</form>
+
+
+
